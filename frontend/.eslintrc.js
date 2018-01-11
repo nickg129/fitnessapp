@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
     "env": {
         "browser": true,
@@ -7,7 +9,8 @@ module.exports = {
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
-            "jsx": true
+            "jsx": true,
+            "impliedStrict" : true,
         },
         "sourceType": "module"
     },
@@ -34,8 +37,7 @@ module.exports = {
     
     "rules": {
         "indent": [
-            "error",
-            "tab"
+            "error"
         ],
         "linebreak-style": [
             "error",
@@ -48,6 +50,8 @@ module.exports = {
         "semi": [
             "error",
             "always"
-        ]
+        ],
+        "react/jsx-filename-extension" : [ "off" ],
+        "react/prefer-stateless-function" : [ "off" ],
     }
 };
