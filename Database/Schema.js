@@ -13,17 +13,61 @@ const schema = {
         age: '27',
     },
     lifeStyle: {
-        sleep: {},
-        diet: {},
-        activity: {},
-        alcohol: {},
-        smoking: {},
-        pharma: {
-            medications: {},
-            substances: {},
+        sleep: {
+            hours: 7,
+            quality: 'restful',
         },
-        wearables: {},
+        diet: {
+            hqProtein: {
+                percent: 10,
+                soucres: ['Chicken','Ground Turkey','Protein Powder']
+            },
+            lqProtein: {
+                percent: 12,
+                sources: ['Fried Chicken','Fast Food Burgers']
+            },
+            hqCarbs: {},
+            lqCarbs: {},
+            hqFats: {},
+            lqFats: {},
+            sugars: {},
+            suppliments: {},
+
+        },
+        activity: {
+            intense: [
+                {   hours: 2,
+                    activity: "Gym Lifting",
+                },
+            ],
+            moderate: [],
+            lowImpact: [],
+        },
+        alcohol: {
+            days: 3,
+            peakDrinks: 4,
+            averageDrinks: 2,
+        },
+        smoking: {
+            days: 2,
+            total: [5, 'cigs'],
+        },
+        pharma: {
+            medications: [],
+            substances: [],
+        },
+        wearables: {
+            fitbit: false,
+            myzone: false,
+        },
     },
-    notes : {},
-    workouts: {},
+    notes : [
+        {   Date: '1/1/2018', 
+            Content: 'Sick gainz today',
+        },
+        {   Date: '1/2/2018',
+            Content: 'Back at it again with the sick gainz',
+        },
+    ],
+    workouts: ['For time \n 100 push ups \n', 'AMRAP 12 \n push ups'],
 }
