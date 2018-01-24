@@ -53,5 +53,6 @@ module.exports = {
         ],
         "react/jsx-filename-extension" : [ "off" ],
         "react/prefer-stateless-function" : [ "off" ],
+        "jsx-a11y/anchor-is-valid" : ["off"],
     }
 };
