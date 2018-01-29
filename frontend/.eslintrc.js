@@ -26,6 +26,9 @@ module.exports = {
           webpack : {
             config : path.join(__dirname, 'hack/config/webpack.config.dev.js'),
           },
+          node: {
+            paths: ["src"]
+          }
         },
         'import/ignore' : [
           /node_modules/,
@@ -34,7 +37,7 @@ module.exports = {
       },
 
     "extends": "airbnb",
-    
+
     "rules": {
         "indent": [
             "error"

@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Paper from 'material-ui/Paper';
 import Button from 'material-ui/Button';
-import Grid from 'material-ui/Grid';
 import styled from 'styled-components';
 import TextField from 'material-ui/TextField';
+
+import { HoldingGrid } from 'components/UIElements';
+
 
 const LoginPaper = styled(Paper)`
   display: flex;
@@ -17,17 +19,10 @@ const LoginPaper = styled(Paper)`
   text-align: center;
 `;
 
-const HoldingGrid = styled(Grid)`
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 class Login extends Component {
   render() {
     return (
-      <HoldingGrid container spacing={12} className="Login">
+      <HoldingGrid container spacing={16} className="Login">
         <LoginPaper item>
           Login
           <div item >
