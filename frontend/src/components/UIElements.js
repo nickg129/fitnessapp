@@ -1,10 +1,10 @@
 import styled from 'styled-components';
-
-import Button from 'material-ui/Button';
+import { Link } from 'react-router-dom';
 import Grid from 'material-ui/Grid';
 
-export const NavButton = styled(Button)`
-    text
+export const ULink = styled(Link)`
+    color: inherit;
+    text-decoration: none;
 `;
 
 export const HoldingGrid = styled(Grid)`

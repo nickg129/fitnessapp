@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Paper from 'material-ui/Paper';
 import Button from 'material-ui/Button';
 import styled from 'styled-components';
 import TextField from 'material-ui/TextField';
 
-import { HoldingGrid } from 'components/UIElements';
+import { HoldingGrid, ULink } from 'components/UIElements';
 
 
 const LoginPaper = styled(Paper)`
@@ -23,16 +22,16 @@ class Login extends Component {
   render() {
     return (
       <HoldingGrid container spacing={16} className="Login">
-        <LoginPaper item>
+        <LoginPaper>
           Login
-          <div item >
+          <div >
             <TextField
               id="Email"
               label="Email"
               margin="normal"
             />
           </div>
-          <div item>
+          <div>
             <TextField
               id="password"
               label="Password"
@@ -41,8 +40,8 @@ class Login extends Component {
             />
           </div>
           <div>
-            <Button raised color="primary"> <Link to="/app"> LOGIN </Link> </Button >
-            <Button raised color="secondary"> <Link to="signup"> SIGNUP </Link> </Button >
+            <Button raised color="primary"> <ULink to="/app"> LOGIN </ULink> </Button >
+            <Button raised color="secondary"> <ULink to="signup"> SIGNUP </ULink> </Button >
           </div>
         </LoginPaper>
       </HoldingGrid>
