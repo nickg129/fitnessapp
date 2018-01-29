@@ -11,6 +11,8 @@ import Signup from './routes/signup';
 import NoMatch from './components/NoMatch';
 import Logout from './components/Logout';
 
+import './styles/App.css';
+
 class App extends Component {
   render() {
     return (
