@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 
 const Temp = styled.main`
 width: 100%;
-height: calc(100% - 56px);
-margin-top: 64px;
+height: calc(100% - 115px);
+margin-top: 65px;
 margin-left: 240px;
+padding: 25px;
 `;
 
 class ContentFrame extends Component {

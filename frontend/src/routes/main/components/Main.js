@@ -4,7 +4,7 @@ import {
   Switch,
 } from 'react-router-dom';
 
-import { Page } from 'components/UIElements';
+import { HoldingGrid } from 'components/UIElements';
 import AppBar from './AppBar';
 import NavDrawer from './NavDrawer';
 import ContentFrame from './ContentFrame';
@@ -16,7 +16,7 @@ import HealthPicture from '../routes/healthpicture';
 class Main extends Component {
   render() {
     return (
-      <Page>
+      <HoldingGrid>
         <AppBar />
         <NavDrawer />
         <ContentFrame>
@@ -27,7 +27,7 @@ class Main extends Component {
             <Route path="/app/healthpicture" component={HealthPicture} />
           </Switch>
         </ContentFrame>
-      </Page>
+      </HoldingGrid>
     );
   }
 }

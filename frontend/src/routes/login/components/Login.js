@@ -18,10 +18,13 @@ const LoginPaper = styled(Paper)`
   text-align: center;
 `;
 
+const LoginGrid = styled(HoldingGrid)`
+align-items: center;
+`;
 class Login extends Component {
   render() {
     return (
-      <HoldingGrid container spacing={16} className="Login">
+      <LoginGrid container spacing={16}>
         <LoginPaper>
           Login
           <div >
@@ -44,7 +47,7 @@ class Login extends Component {
             <Button raised color="secondary"> <ULink to="signup"> SIGNUP </ULink> </Button >
           </div>
         </LoginPaper>
-      </HoldingGrid>
+      </LoginGrid>
     );
   }
 }
