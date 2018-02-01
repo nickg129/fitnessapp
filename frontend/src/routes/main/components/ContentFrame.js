@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Temp = styled.main`
-width: '100%';
-height: 'calc(100% - 56px)';
-margin-top: 56px;
+width: 100%;
+height: calc(100% - 56px);
+margin-top: 64px;
 margin-left: 240px;
 `;
 

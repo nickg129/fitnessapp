@@ -4,10 +4,10 @@ import {
   Switch,
 } from 'react-router-dom';
 
+import { Page } from 'components/UIElements';
 import AppBar from './AppBar';
 import NavDrawer from './NavDrawer';
 import ContentFrame from './ContentFrame';
-
 import Goals from '../routes/goals';
 import Workouts from '../routes/workouts';
 import Notes from '../routes/notes';
@@ -16,7 +16,7 @@ import HealthPicture from '../routes/healthpicture';
 class Main extends Component {
   render() {
     return (
-      <div>
+      <Page>
         <AppBar />
         <NavDrawer />
         <ContentFrame>
@@ -27,7 +27,7 @@ class Main extends Component {
             <Route path="/app/healthpicture" component={HealthPicture} />
           </Switch>
         </ContentFrame>
-      </div>
+      </Page>
     );
   }
 }
