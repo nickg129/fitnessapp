@@ -1,24 +1,35 @@
 const path = require('path');
 
 module.exports = {
-    "env": {
-        "browser": true,
-        "es6": true
+    root: true,
+    parser : 'babel-eslint',
+    parserOptions : {
+      sourceType : 'module',
+      ecmaFeatures : {
+        jsx : true,
+        impliedStrict : true,
+        experimentalObjectRestSpread : true,
+      },
     },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
-            "jsx": true,
-            "impliedStrict" : true,
+
+    env: {
+        browser: true,
+        es6: true
+    },
+    extends: "eslint:recommended",
+    parserOptions: {
+        ecmaFeatures: {
+            experimentalObjectRestSpread: true,
+            jsx: true,
+            impliedStrict : true,
         },
-        "sourceType": "module"
+        sourceType: "module"
     },
-    "plugins": [
+    plugins: [
         "react"
     ],
-    "settings" : {
-        'react' : {
+    settings : {
+        react : {
           pragma : 'React',
           version : '15.0',
         },
@@ -27,7 +38,7 @@ module.exports = {
             config : path.join(__dirname, 'hack/config/webpack.config.dev.js'),
           },
           node: {
-            paths: ["src"]
+            paths: [path.resolve(__dirname, 'src')],
           }
         },
         'import/ignore' : [
@@ -36,9 +47,9 @@ module.exports = {
         ],
       },
 
-    "extends": "airbnb",
+    extends: "airbnb",
 
-    "rules": {
+    rules: {
         "indent": [
             "error"
         ],
