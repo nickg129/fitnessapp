@@ -12,8 +12,8 @@ import Button from 'material-ui/Button';
 const drawerWidth = 240;
 
 const Header = styled(AppBar)`
-postion: absolute;
-width: calc 100%-${drawerWidth}px;
+position: absolute;
+width: calc(100%-${drawerWidth}px);
 padding-left: ${drawerWidth}px;
 `;
 

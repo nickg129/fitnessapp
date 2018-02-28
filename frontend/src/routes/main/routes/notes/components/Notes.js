@@ -20,8 +20,8 @@ margin-bottom: 50px;
 
 const NotesGrid = styled(HoldingGrid)`
 flex-direction: column;
-align-content: center;
-padding 0 20% 0 20%;
+padding: 50px 20% 0 20%;
+justify-content: flex-start;
 `;
 
 class Notes extends Component {

@@ -19,7 +19,7 @@ margin: 20px;
 `;
 
 const PastGoals = styled(Paper)`
-width 80%;
+width: 80%;
 height: 45%;
 padding: 10px;
 `;
